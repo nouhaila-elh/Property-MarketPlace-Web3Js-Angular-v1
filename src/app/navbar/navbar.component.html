@@ -1,0 +1,33 @@
+<mat-toolbar class="mat-elevation-z8 app-toolbar">
+  <mat-icon>real_estate_agent</mat-icon>
+  <span class="tabulation"> Real Estate Agent</span>
+  <div class="spacer"></div>
+  <a mat-button routerLink="">Home</a>
+  <a mat-button *ngIf="isSignIn()=='true'" routerLink="AddProprety">Add Property</a>
+
+  <a mat-button *ngIf="isSignIn()=='true'" routerLink="SellingProprety"
+    >Sell your proprety</a
+  >
+  <a mat-button *ngIf="isSignIn()=='true'" routerLink="CurrentSells">Current Sells</a>
+  <a mat-button *ngIf="isSignIn()=='true'" routerLink="MyPropreties"
+    >Propreties bought</a
+  >
+  <a mat-button *ngIf="isSignIn()=='true'" routerLink="MarketPlace">Market Place</a>
+  <a mat-button routerLink="AllTransactions">All blockchain transaction</a>
+  <a mat-button *ngIf="isSignIn()=='true'" routerLink="InterfaceUser">My Account</a>
+  <a
+    mat-raised-button
+    *ngIf="isSignIn()=='false'"
+    color="primary"
+    routerLink="FormSignIn"
+    >Sign in</a
+  >
+  <a
+    mat-raised-button
+    *ngIf="isSignIn()=='true'"
+    color="primary"
+    routerLink="FormSignIn"
+    (click)="Logout()"
+    >Logout</a
+  >
+</mat-toolbar>

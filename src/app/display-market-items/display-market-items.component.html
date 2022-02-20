@@ -1,0 +1,75 @@
+<div
+  style="
+    background-image: url('../../assets/imgs/BackGroundImg.png');
+    min-height: 100%;
+  "
+>
+  <form class="search-bar">
+    <input
+      class="form-control mr-sm-2"
+      type="search"
+      placeholder="Search by seller address"
+      aria-label="Search"
+      name="sellerSearchInputeSearch"
+      [(ngModel)]="sellerSearchInputeSearch"
+    />
+    <button
+      class="search-btn"
+      (click)="searchBySellerAddress(sellerSearchInputeSearch)"
+    >
+      <span>Search</span>
+    </button>
+  </form>
+  <div class="wrapper">
+    <div *ngFor="let item of MarketItems | async; let i = index" class="card">
+      <div
+        [ngClass]="{
+          'card-image-apartement': propertiesTypes[i] === 'Apartement',
+          'card-image-land': propertiesTypes[i] === 'Land',
+          'card-image-garage': propertiesTypes[i] === 'Garage',
+          'card-image-bureau': propertiesTypes[i] === 'Office',
+          'card-image-villa': propertiesTypes[i] === 'Villa',
+          'card-image-villa': propertiesTypes[i] === 'Villa',
+          'card-image-maison': propertiesTypes[i] === 'House'
+        }"
+      ></div>
+      <div class="card-text">
+        <span class="date"></span>
+        <p style="font-weight: bold">Seller:</p>
+        <p style="overflow-wrap: break-word">
+          {{ item["seller"] }}
+        </p>
+        <p style="font-weight: bold">Area:</p>
+        <p style="overflow-wrap: break-word">{{ propertiesAreas[i] }} m²</p>
+
+        <p style="font-weight: bold">address:</p>
+        <p>{{ propertiesAddresses[i] }}</p>
+      </div>
+
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">Price:</div>
+          <div class="type">{{ item["price"] }} ETH</div>
+          <div class="type">
+            {{ item["price"] * (BinanceObject?.price || 0) | number: "1.0-0" }}$
+          </div>
+        </div>
+        <div>
+          <button
+            class="button-36"
+            (click)="
+              createMarketSale(
+                item['itemId'],
+                item['price'],
+                item['seller'],
+                allItemsTitre[i]
+              )
+            "
+          >
+            Buy
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

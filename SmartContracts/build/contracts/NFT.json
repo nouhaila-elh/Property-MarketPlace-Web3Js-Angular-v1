@@ -1,0 +1,215 @@
+{
+  "contractName": "NFT",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/NFTContract.sol\":\"NFT\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/utils/Counters.sol\":{\"keccak256\":\"0xf0018c2440fbe238dd3a8732fa8e17a0f9dce84d31451dc8a32f6d62b349c9f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://59e1c62884d55b70f3ae5432b44bb3166ad71ae3acd19c57ab6ddc3c87c325ee\",\"dweb:/ipfs/QmezuXg5GK5oeA4F91EZhozBFekhq5TD966bHPH18cCqhu\"]},\"project:/contracts/NFTContract.sol\":{\"keccak256\":\"0x919672742965600f14bf7a9f1ec83af7d7e792b7893ba27c88f6bd601cf7eb6f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fbd3a1b37cf374c07cc2dd500abe3a48b7289a6a907f7d11133a262fe7b4eff3\",\"dweb:/ipfs/QmSEFFXLTtrcbo6a46eCCxzgyrUSn1myUgraoPUZ1WwJq4\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d6b23d1e2849a10d2e7c998929c77139289931a1e13c438937b516759dab536664736f6c634300080a0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220d6b23d1e2849a10d2e7c998929c77139289931a1e13c438937b516759dab536664736f6c634300080a0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "125:66:3:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "125:66:3:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\nimport \"@openzeppelin/contracts/utils/Counters.sol\";\r\n\r\ncontract NFT  {\r\n    using Counters for Counters.Counter;\r\n    \r\n}\r\n",
+  "sourcePath": "C:\\Users\\Omar Ra\\Desktop\\Front\\SmartContracts\\contracts\\NFTContract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/NFTContract.sol",
+    "exportedSymbols": {
+      "Counters": [
+        113
+      ],
+      "NFT": [
+        154
+      ]
+    },
+    "id": 155,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 148,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:3"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/utils/Counters.sol",
+        "file": "@openzeppelin/contracts/utils/Counters.sol",
+        "id": 149,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 155,
+        "sourceUnit": 114,
+        "src": "69:52:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "NFT",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 154,
+        "linearizedBaseContracts": [
+          154
+        ],
+        "name": "NFT",
+        "nameLocation": "134:3:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 153,
+            "libraryName": {
+              "id": 150,
+              "name": "Counters",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 113,
+              "src": "152:8:3"
+            },
+            "nodeType": "UsingForDirective",
+            "src": "146:36:3",
+            "typeName": {
+              "id": 152,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 151,
+                "name": "Counters.Counter",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 45,
+                "src": "165:16:3"
+              },
+              "referencedDeclaration": 45,
+              "src": "165:16:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Counter_$45_storage_ptr",
+                "typeString": "struct Counters.Counter"
+              }
+            }
+          }
+        ],
+        "scope": 155,
+        "src": "125:66:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:160:3"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/NFTContract.sol",
+    "exportedSymbols": {
+      "Counters": [
+        113
+      ],
+      "NFT": [
+        154
+      ]
+    },
+    "id": 155,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 148,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:3"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/utils/Counters.sol",
+        "file": "@openzeppelin/contracts/utils/Counters.sol",
+        "id": 149,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 155,
+        "sourceUnit": 114,
+        "src": "69:52:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "NFT",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 154,
+        "linearizedBaseContracts": [
+          154
+        ],
+        "name": "NFT",
+        "nameLocation": "134:3:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 153,
+            "libraryName": {
+              "id": 150,
+              "name": "Counters",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 113,
+              "src": "152:8:3"
+            },
+            "nodeType": "UsingForDirective",
+            "src": "146:36:3",
+            "typeName": {
+              "id": 152,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 151,
+                "name": "Counters.Counter",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 45,
+                "src": "165:16:3"
+              },
+              "referencedDeclaration": 45,
+              "src": "165:16:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Counter_$45_storage_ptr",
+                "typeString": "struct Counters.Counter"
+              }
+            }
+          }
+        ],
+        "scope": 155,
+        "src": "125:66:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:160:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.10+commit.fc410830.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-01-07T19:03:51.410Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
